@@ -23,11 +23,3 @@ console.log(Object.getPrototypeOf(info));
 // 当我们从一个对象中获取某一个属性时 它会触发[get]操作
 //   在当前对象中查找对应的属性 如果找到直接使用
 //   如果没有找到 那么会沿着它的原型链去查找
-
-
-
-option.map((item,index) => {
-  return (
-    <div key={index} onClick={}>{item.name}</div>
-  )
-})
