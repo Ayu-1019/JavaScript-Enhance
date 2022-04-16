@@ -6,9 +6,14 @@ const obj = {
 
 const objProxy = new Proxy(obj,{
   get:function(target, key, receiver){
-    return target[key];
+    console.log(`监听到${target}的${key}属性被访问`);
+    return Reflect.get(target, key);
   },
   set:function(target, key, newValue, receiver){
-
+    console.log(`监听到${target}的${key}属性被改变`);
+    Reflect.set(target, key, newValue);
   }
 });
+
+objProxy.name = 'lisi';
+console.log(objProxy.name);
