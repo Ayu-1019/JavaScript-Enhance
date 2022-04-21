@@ -17,17 +17,17 @@ async function foo1(){
 
 foo1();
 
-// 2.await跟上其他值
-async function foo2(){
-  const res1 = await 222;
-  console.log(res1);
+// // 2.await跟上其他值
+// async function foo2(){
+//   const res1 = await 222;
+//   console.log(res1);
 
-  const res2 = await {
-    then: function(resolve, reject) {
-      resolve('2222222');
-    }
-  }
-  console.log(res2);
-}
+//   const res2 = await {
+//     then: function(resolve, reject) {
+//       resolve('2222222');
+//     }
+//   }
+//   console.log(res2);
+// }
 
-foo2();
+// foo2();
