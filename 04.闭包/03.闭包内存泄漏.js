@@ -12,7 +12,6 @@ for (var i = 0;i<100;i++){
   arrFns.push(createArray());
 }
 
-
 setTimeout(() => {
   arrFns = null;
 },2000)

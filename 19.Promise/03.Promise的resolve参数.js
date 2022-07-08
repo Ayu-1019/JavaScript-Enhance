@@ -10,7 +10,7 @@ const newPromise = new Promise((resolve, reject) => {
 })
 
 new Promise((resolve, reject) => {
-  resolve(newPromise);
+  resolve(3 + 4);
   // reject();
 }).then(res => {
   

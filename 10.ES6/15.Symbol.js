@@ -6,6 +6,7 @@ var foo = {
   firend:{
     name:'lisi'
   }
+  
 }
 
 // symbol的使用
